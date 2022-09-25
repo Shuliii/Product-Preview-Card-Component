@@ -34,8 +34,8 @@ body {
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 37.5rem;
-  height: 28.125rem;
+  max-width: 37.5rem;
+  min-height: 28.125rem;
   background: var(--clr-white);
   border-radius: 0.625rem;
 }
@@ -137,8 +137,8 @@ body {
   .wrapper {
     display: flex;
     flex-direction: column;
-    width: 21.4375rem;
-    height: 38.1875rem;
+    max-width: 21.4375rem;
+    min-height: 38.1875rem;
   }
 
   .image {
