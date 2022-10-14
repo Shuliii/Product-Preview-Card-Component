@@ -35,14 +35,17 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 37.5rem;
+  width: 80vw;
+  margin-inline: auto;
   min-height: 28.125rem;
   background: var(--clr-white);
   border-radius: 0.625rem;
 }
 
-.image {
-  background: url("./images/image-product-desktop.jpg") no-repeat;
-  background-size: cover;
+picture img {
+  display: block;
+  width: 100%;
+  height: 100%;
   border-radius: 0.625rem 0 0 0.625rem;
 }
 
@@ -133,19 +136,16 @@ body {
   background: var(--clr-button-hover);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 550px) {
   .wrapper {
     display: flex;
     flex-direction: column;
     max-width: 21.4375rem;
     min-height: 38.1875rem;
+    width: 100%;
   }
 
-  .image {
-    background: url("./images/image-product-mobile.jpg");
-    background-size: cover;
-    width: 21.4375rem;
-    height: 15rem;
+  picture img {
     border-radius: 0.625rem 0.625rem 0 0;
   }
 
